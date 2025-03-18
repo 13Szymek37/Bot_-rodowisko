@@ -1,1 +1,1 @@
-# Bot_srodowisko
+#Bot, który pomoże chronić środowisko!
