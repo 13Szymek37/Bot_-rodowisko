@@ -29,7 +29,14 @@ async def zanieczyszczenia(ctx):
     await ctx.send(f'Zanieczyszczenia to bardzo obszerny temat.Oto kilka komend, które pomogą Ci zgłębić się w tym temacie : powietrze, wody_powierzchniowe, wody_glebowe')
 @bot.command()
 async def powietrze(ctx):
-    await ctx.send(f'Zanieczyszczenia powietrza ')
-
-
+    await ctx.send(f'Zanieczyszczenie powietrza to obecność szkodliwych substancji w atmosferze ziemskiej, by dowiedzieć się o tym więcej zapraszam na tę strone : https://airly.org/pl/wszystko-co-powinienes-wiedziec-o-zanieczyszczeniu-powietrza/')
+@bot.command()
+async def wody_powierzchniowe(ctx):
+    await ctx.send(f'Zanieczyszczenie wód powierzchniowych to widoczny problem polegający na dostawaniu się szkodliwych substancji do rzek i jezior po więcej informacji zajrzyj tutaj : https://www.filtrybb.pl/blog/42/skutki-zanieczyszczenia-wod')
+@bot.command()
+async def wody_glebowe(ctx):
+    await ctx.send(f'Zanieczyszczenie wód glebowych to bardzo niebezpieczne, bo niewidoczne zjawisko po więcej informacji sprawdź te strone : https://retencja.pl/blog/zanieczyszczenie-wod-podziemnych/')
+@bot.command()
+async def rozkład(ctx):
+    await ctx.send(f'Gdy wyrzucamy jakiś przedmiot to ulega on rozkładowi od jabłka, które rozłoży się w kilka tygodni, do reklamówek, które rozłożą sie za setki lat po więcej informacji zajrzyj tu : https://www.decathlon.pl/c/misc/jak-dlugo-rozkladaja-sie-smieci-czas-rozkladu-roznych-odpadow_974d3bdc-cafc-4508-a85e-a5475824fe52')
 bot.run('token')
