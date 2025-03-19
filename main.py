@@ -15,10 +15,10 @@ async def on_ready():
 
 @bot.command()
 async def informacje(ctx):
-    await ctx.send(f"Cześć jestem botem, który pomoże wam ochronić środowisko! Aby dowiedzieć się co oferuję wpisz ?commandlist")
+    await ctx.send(f"Cześć nazywam się {bot.user} i jestem botem, który pomoże wam ochronić środowisko! Aby dowiedzieć się co oferuję wpisz ?commandlist")
 @bot.command()
 async def commandlist(ctx):
-    await ctx.send(f'Lista komend to : recykling, zanieczyszczenia, rozkład,')
+    await ctx.send(f'Lista komend to : recykling, zanieczyszczenia, rozkład, własny_pomysł, nie zapomnij przed każdą z nich wpisać --> ? <--')
 
 @bot.command()
 async def recykling(ctx):
@@ -39,4 +39,7 @@ async def wody_glebowe(ctx):
 @bot.command()
 async def rozkład(ctx):
     await ctx.send(f'Gdy wyrzucamy jakiś przedmiot to ulega on rozkładowi od jabłka, które rozłoży się w kilka tygodni, do reklamówek, które rozłożą sie za setki lat po więcej informacji zajrzyj tu : https://www.decathlon.pl/c/misc/jak-dlugo-rozkladaja-sie-smieci-czas-rozkladu-roznych-odpadow_974d3bdc-cafc-4508-a85e-a5475824fe52')
+@bot.command()
+async def własny_pomysł(ctx):
+    await ctx.send(f'Jeśli posiadasz pomysł jak mogę udosklkonalić mojego bota lub jakie komendy mogę dodać skontaktuj się ze mną tutaj : adszymek2020@gmail.com') 
 bot.run('token')
